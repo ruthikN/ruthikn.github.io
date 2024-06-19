@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="'en">
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ca1421cf04.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Img/logo.jpeg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+                <p>RTL Designer</p>
+            <h1>Hi, I'm <span>Rohith</span> <br> from Texas</h1>
+            <img src="Img/Rohith1.jpeg" class="right-image">
+        </div>
+    </div>
+</div>
+<!-- ------------------About-------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Img/hr.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hello, I'm a graduate student in Computer Engineering specializing in VLSI and Embedded Systems at University of Texas at Dallas.
+                    Related Coursework: VLSI Design, Embedded Systems, ASIC Design, Design and Analysis of Reconfigurable Systems, Advanced Digital Logic, 
+                    Hardware Descriptive Languages, Applied Digital Signal Processing, Machine Learning, Design and Analysis of Computer Algorithms.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experince')">Experince</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>RTL</span><br>Designer using VLSI</li>
+                        <li><span>Cadence</span><br> (Virtuoso, Innovus, Tempus, JasperGold, Xcelium)</li>
+                        <li><span> Mentor Graphics Calibre </span><br>(DRC, LVS, PEX)</li>
+                        <li><span>Synopsys</span><br> (VCS, DesignVision, PrimeTime, TetraMAX, HSPICE, WaveView)</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experince">
+                    <ul>
+                        <li><span>February 2022 – March 2022</span><br>RTL Design and Verification Trainee at Maven Silicon, India </li>
+                        <li><span>June 2021 – July 2021</span><br>Hardware Engineer Intern, Shilpa Engineering and Contractors, India</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>May 2021</span><br>Kakatiya Institute of Technology and Science<br>
+                            Bachelor of Technology, Electrical and Electronics Engineering</li>
+                        <li><span>May 2024</span><br>The University of Texas at Dallas, Richardson, USA <br>
+                            Master of Science, Computer Engineering – VLSI and Embedded Systems
+                            <br>GPA: 3.52
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------------About End------------------ -->
+<!-- ------------------Blog------------------ -->
+<div id="blog">
+    <div class="container">
+        <h1 class="sub-title">My Blog</h1>
+        <br>
+        <br>
+        <div class="blog-list">
+            <div>
+                <i class="fa-solid fa-blog"></i>
+                <br>
+                <h1>Welcome To My Blog</h1>
+                <br> <br>
+                <p> <p style="font-size: 20px">
+                    Overview
+                    Welcome to my Gitbook! Here, I've gathered all the RTL design problems and interview 
+                    questions I tackled while prepping for my interviews. I've explained each problem in 
+                    a way that's easy to understand. Plus, you can also check out my portfolio and the projects 
+                    I've worked on during my Master's. Let's dive in and learn together!
+                </p>
+                <br>
+                <a href="https://rohithn.gitbook.io/home">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------------Portfoilio-------------------- -->
+<div id="portfolio"> 
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <br>
+        <div class="work-list">
+            <div class="work">
+                <img src="Img/rt1.jpeg" width="155%" />
+                <div class="layer">
+                    <br>
+                    <h3>ASIC Design and Verification of Mini Stereo Digital Audio Processor(MSDAP)
+                    </h3>
+                    <br>
+                    <p>
+                        • Designed a low-cost, low-power MSDAP, featuring fully pipelined two 256 order FIR LPFs using 18nm library, 
+                        SIP0, ALU, Controller, 8kb Memory, operating at 28.66 MHz System Clock and 768 KHz Data Clock.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Img/rt3.jpeg" width="110%">
+                <div class="layer">
+                    <h3>I2C Controller Core Verification Using UVM Methodology
+                    </h3>
+                    <br>
+                    <p>
+                        • Developed Advanced UVM Verification environment for I2C controller core with wishbone interface using transaction
+                        level and layered architecture. Environment constructed in Synopsys VCS.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Img/rt5.jpeg" width="190%">
+                <div class="layer">
+                    <h3>Fault Analysis of Stuck at Models using Synopsys TetraMAX and ATPG 
+                    </h3>
+                    <br>
+                    <p>
+                        • Designed the circuit using Structural HDL and performed ATPG to determine test Vectors, Stuck at Faults and fault
+                        coverage using Synopsys TetraMAX.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------------contact------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Get in Touch</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> rohithn23@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 6300092197</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></i></a>
+                </div>
+                <a href="Img/nrohitv.pdf" download class="btn bnt2">Download CV</a>
+                </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> 2024 Rohith N</p>
+    </div>
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabconents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabconent of tabconents){
+            tabconent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="0";
+    }
+
+</script>
+</body>
+</html>
